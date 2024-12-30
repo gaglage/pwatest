@@ -1,6 +1,6 @@
 <template>
   <div>
-  GABI
-    <!-- <NuxtWelcome /> -->
+    <VitePwaManifest />
+    <NuxtPage />
   </div>
 </template>
