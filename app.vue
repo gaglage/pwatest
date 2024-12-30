@@ -1,5 +1,6 @@
 <template>
   <div>
-    <NuxtWelcome />
+  GABI
+    <!-- <NuxtWelcome /> -->
   </div>
 </template>
