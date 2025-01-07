@@ -74,6 +74,8 @@ export default defineNuxtConfig({
       ],
     },
   },
-
+  nitro: {
+    preset: 'vercel',
+  },
   compatibilityDate: "2025-01-03",
 });
