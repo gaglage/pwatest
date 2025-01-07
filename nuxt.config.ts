@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     // prerender index route by default
     // "/": { prerender: true },
   },
+
   pwa: {
     registerType: "autoUpdate",
     manifest: {
@@ -73,4 +74,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: "2025-01-03",
 });
