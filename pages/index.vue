@@ -16,7 +16,8 @@ const championships = ref<any>(null);
 // Llama a la función dentro de onMounted y asigna el resultado
 onMounted(async () => {
   console.log("hola");
-  const { data } = await (getChampionships() || []);
+  const result = await (getChampionships() || []);
+  const data = result?.data || [];
   championships.value = data;
   console.log(
     "🚀 ~ file: index.vue:20 ~ onMounted ~ championships.value :",
