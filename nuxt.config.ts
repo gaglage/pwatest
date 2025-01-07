@@ -1,15 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
+  components: true,
   modules: ["@nuxt/image", "@vite-pwa/nuxt", "@nuxt/devtools"],
 
   routeRules: {
     // prerender index route by default
-    "/": { prerender: true },
+    // "/": { prerender: true },
   },
   pwa: {
-
     registerType: "autoUpdate",
     manifest: {
       name: "GabiPWATest",
@@ -61,6 +60,7 @@ export default defineNuxtConfig({
       runtimeCaching: [
         {
           urlPattern: /.*\.(?:js|css|json|html)$/,
+
           handler: "NetworkFirst",
           options: {
             cacheName: "assets-cache",
@@ -73,6 +73,4 @@ export default defineNuxtConfig({
       ],
     },
   },
-
-  compatibilityDate: "2024-12-30",
 });
